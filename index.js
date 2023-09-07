@@ -12,8 +12,7 @@ function clock () {
     let AmOrPm = hour >= 12 ? 'PM' : 'AM';
     let minute = time.getUTCMinutes()
     let seconds = time.getUTCSeconds()
-    let millisecs = time.getUTCMilliseconds()
-    const currentTime = hour + ':' + minute + ':' + seconds + ':' + millisecs
+    const currentTime = hour + ':' + minute + ':' + seconds + AmOrPm
     
     document.querySelector("[data-testid='currentUTCTime']").innerHTML = currentTime
 }
