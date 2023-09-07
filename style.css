@@ -52,11 +52,10 @@ div {
   width: 50%;
 }
 
-a {
+[data-testid="githubURL"] {
   text-align: center;
   position: absolute;
   font-size: 1.3em;
-  /* border: 1px solid white; */
   color: white;
   padding: 0.5em;
   bottom: 2%;
